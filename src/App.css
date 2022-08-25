@@ -1,0 +1,197 @@
+.App {
+  text-align: left;
+  font-family: "Comic Sans MS";
+}
+body {
+  background-size: 300px 354px;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-attachment: fixed;
+  background-position: right top;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+#image {
+  height: 300px;
+  width: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#image:hover {
+  opacity: 0.7;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+#logo {
+  color: rebeccapurple;
+  font-family: "Comic Sans MS";
+  text-align: center;
+  font-size: 50px;
+}
+#button {
+  background-color: #008080;
+  color: white;
+  padding: 0.375rem 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+#diary {
+  margin: 20px;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+}
+#diary_info {
+  padding: 5px;
+  padding-bottom: 0px;
+}
+#notes {
+  padding: 5px;
+}
+#card {
+  background-color: rgb(199, 184, 228);
+  border-radius: 20px;
+  /* max-width: 18em; */
+}
+#heading1 {
+  font-family: "Comic Sans MS";
+  font-size: 22px;
+}
+#button1 {
+  background-color: rgb(199, 184, 228);
+  color: dodgerblue;
+  border: none;
+}
+@media (min-width: 1200px) {
+  #card-columns {
+    column-count: 4;
+  }
+}
+@media (max-width: 1200px) {
+  #card-columns {
+    column-count: 3;
+  }
+}
+@media (max-width: 885px) {
+  #card-columns {
+    column-count: 2;
+  }
+}
+@media (max-width: 576px) {
+  #card-columns {
+    column-count: 1;
+  }
+}
+#text {
+  white-space: pre-wrap;
+  text-align: left;
+}
+/* function textAreaAdjust(o) {
+  o.style.height = "1px";
+  o.style.height = (25+o.scrollHeight)+"px";
+} */
+#textarea_notes {
+  width: 100%;
+  height: 150px;
+}
+.title {
+  font-size: 2rem;
+  text-align: center !important;
+  margin-top: 10%;
+  color: #4aa1f3;
+  font-weight: bold;
+}
+
+.content {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
